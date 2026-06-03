@@ -1,0 +1,112 @@
+# Setup Log
+
+## May 24, 2026 – Project Planning and Environment Preparation
+
+* Started reviewing the project requirements and understanding the objectives of building a Mini-HPC and Hybrid HPC-Big Data Cluster.
+* Evaluated the hardware requirements needed for running three Ubuntu virtual machines simultaneously.
+* Initial testing showed that my personal laptop (4 GB RAM) could not reliably run the required virtual machines and services.
+* Due to hardware limitations, I used another laptop with better resources to continue the project implementation.
+* Prepared the software environment by installing VirtualBox and downloading the required Ubuntu images.
+
+## May 25, 2026 – Virtual Machine Creation
+
+* Created three Ubuntu virtual machines:
+
+  * Master Node
+  * Worker 1
+  * Worker 2
+* Allocated resources for each VM.
+* Verified that all virtual machines booted successfully.
+
+## May 26, 2026 – Network Configuration
+
+* Configured Host-Only Networking in VirtualBox.
+* Assigned static IP addresses to all nodes using Netplan.
+* Applied network configuration and tested connectivity.
+* Resolved several networking issues before achieving successful communication between nodes.
+
+## May 27, 2026 – Hostname Configuration
+
+* Configured hostnames for all nodes:
+
+  * master
+  * worker1
+  * worker2
+* Updated the `/etc/hosts` file on all machines.
+* Verified hostname resolution and communication between nodes using ping tests.
+
+## May 28, 2026 – MPI Installation
+
+* Installed OpenMPI and required development packages.
+* Installed Python libraries required for distributed machine learning.
+* Verified OpenMPI installation on all nodes.
+
+## May 29, 2026 – SSH Configuration
+
+* Generated SSH keys on the master node.
+* Configured passwordless SSH authentication.
+* Encountered SSH connectivity issues during testing.
+* Started and enabled the SSH service on worker nodes.
+* Successfully verified passwordless login between all cluster nodes.
+
+## May 30, 2026 – MPI Testing
+
+* Created the MPI hostfile.
+* Executed communication tests using OpenMPI.
+* Verified process distribution across all nodes.
+* Fixed package installation inconsistencies between nodes.
+
+## May 31, 2026 – Distributed Machine Learning Task
+
+* Executed the distributed MNIST machine learning task using mpi4py and OpenMPI.
+* Verified successful distributed execution across cluster nodes.
+* Collected performance metrics and execution results.
+* Confirmed correct operation of the Mini-HPC cluster.
+
+## June 1, 2026 – Docker Installation and Swarm Setup
+
+* Installed Docker on all nodes.
+* Configured Docker services and user permissions.
+* Initialized Docker Swarm on the master node.
+* Added worker nodes to the swarm cluster.
+* Verified cluster membership and node status.
+
+## June 2, 2026 – Spark Cluster Deployment
+
+* Deployed the Spark cluster using Docker Stack.
+* Configured Spark Master and Spark Worker services.
+* Resolved connectivity and configuration issues.
+* Verified successful worker registration through the Spark Web UI.
+
+## June 3, 2026 – Distributed Bioinformatics Analysis
+
+* Prepared the bioinformatics dataset.
+* Executed the distributed gene expression analysis using PySpark.
+* Installed additional Python dependencies required by Spark containers.
+* Successfully completed the distributed bioinformatics workflow.
+* Verified generated results and cluster functionality.
+* Collected screenshots and organized project files.
+
+## Challenges Encountered
+
+* Limited hardware resources on the available laptop (4 GB RAM) made running multiple virtual machines difficult.
+* Several networking configuration issues were encountered during the cluster setup process.
+* SSH connectivity problems required additional troubleshooting and service configuration.
+* Docker and Spark services required multiple configuration adjustments before successful deployment.
+* The project was completed individually, requiring independent problem solving, debugging, and system administration throughout the implementation process.
+
+## Final Verification – June 3, 2026 (Late Evening)
+
+* Verified communication between all cluster nodes.
+* Verified MPI execution across the cluster.
+* Verified Docker Swarm functionality.
+* Verified Spark cluster operation.
+* Confirmed successful execution of distributed machine learning and bioinformatics tasks.
+* Organized all source code, screenshots, configuration files, and documentation for submission.
+
+## June 4, 2026 – Documentation Preparation
+
+* Prepared the final project report.
+* Created presentation slides.
+* Reviewed project files and documentation.
+* Finalized submission materials.
