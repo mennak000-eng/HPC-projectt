@@ -20,7 +20,7 @@ Task 2: Hybrid HPC-Big Data Cluster using Apache Spark**
 
 ### Documentation and Supporting Files
 setup_log.txt – Project setup and implementation log.
- Final_Project.md – Project report and summary.
+ The final project.md – Project report and summary.
  screenshots/ – Screenshots documenting cluster configuration, execution, and results.
 
 The project demonstrates the deployment of distributed computing environments using MPI, Docker Swarm, and Apache Spark to perform machine learning and bioinformatics workloads across multiple computing nodes.
