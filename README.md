@@ -27,4 +27,4 @@ The project demonstrates the deployment of distributed computing environments us
 
 ## Project persentation Video
 The project presentation video can be accessed using the following link:
-
+https://drive.google.com/file/d/1Dv_M-zBOg7zvoYVgEMCtN0EFMgLPv4h5/view?usp=sharing
