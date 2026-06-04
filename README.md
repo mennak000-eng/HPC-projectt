@@ -24,3 +24,7 @@ setup_log.txt – Project setup and implementation log.
  screenshots/ – Screenshots documenting cluster configuration, execution, and results.
 
 The project demonstrates the deployment of distributed computing environments using MPI, Docker Swarm, and Apache Spark to perform machine learning and bioinformatics workloads across multiple computing nodes.
+
+## Project persentation Video
+The project presentation video can be accessed using the following link:
+
